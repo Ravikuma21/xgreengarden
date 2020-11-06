@@ -2,25 +2,33 @@
     margin: 0;
     padding: 0;
 }
-::selection{
-    background-color:green;
+
+::selection {
+    background-color: green;
     color: #fff;
 }
 
-#header {
+.inner-headers {
     background-color: #252220;
     width: 100%;
-    height: 7em;
     text-align: center;
+
+}
+
+.navbar {
+    background-color: #252220;
+    z-index: 100;
 
 }
 
 .navbar-brand {
     font-size: 25px;
     font-weight: 600;
-    margin-right: 12em;
+}
 
-
+.navbar-nav {
+    position: relative;
+    left: 15%;
 }
 
 .act {
@@ -34,92 +42,44 @@
 }
 
 .acts:hover {
+
     border-radius: 10px;
     text-align: center;
     background-color: transparent;
     background-image: linear-gradient(90deg, #196730, #439a0d);
 
-}
-
-
-@media screen and (max-width: 540px) {
-    .nav-item {
-        z-index: 100;
-
-    }
-    .navbar{
-        background-color: #252220;
-        z-index: 100;
-    }
-
-    .navbar-toggler {
-        display: block;
-        margin-top: -20px;
-        z-index: 100;
-        position: relative;
-        left: 80%;
-        top: -50px;
-        
-    }
-
-    .inner-headers {
-        width: 100%;
-    }
-
-    .act {
-        width: 90%;
-        height: 50px;
-        border-radius: 10px;
-        text-align: center;
-        background-color: transparent;
-        background-image: linear-gradient(90deg, #196730, #439a0d);
-
-    }
-    .acts:hover{
-        border-radius: 10px;
-        text-align: center;
-        background-color: transparent;
-        background-image: linear-gradient(90deg, #196730, #439a0d);
-        
-    }
-
 
 }
 
-span {
-    color: #fff;
+h2 span {
+    color: #439a0d;
 }
-
 
 .logo-img {
-    color: #fff;
     width: 100px;
-    height: 75px;
+    height: 80px;
+}
+
+.logo-name {
+    display: inline;
+    position: absolute;
+    color: #fff;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.logo-name span {
+    display: block;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
 }
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: #fff;
 }
 
-@media screen and (max-width: 540px) {
-    .navbar-light .navbar-nav .nav-link {
-        color: #fff;
-    }
-
-    .dropdown-menu {
-        background-color: #42913E;
-    }
-}
-
-
-.logoline {
-    margin-top: -39px;
-    margin-bottom: 1rem;
-    margin-left: 5em;
-}
 
 .nav-item {
     color: #fff;
@@ -127,6 +87,7 @@ span {
     font-size: 18px;
     font-weight: 400;
 }
+
 
 .contact {
     margin-top: 50px;
@@ -161,20 +122,26 @@ h2 span {
 
 }
 
+.form1 {
+    margin-top: 20px;
+}
+
 .form1 input {
-    width: 350px;
+    width: 49%;
     height: 40px;
 
 }
-.form1 label{
-    color: #666;
-    font-weight: 300;
+
+.form1 label {
+    color: #828282;
+    font-weight: 500;
 }
 
 .email {
-    margin-left: 25px;
+    width: 50%;
     margin-bottom: 20px;
-    display: inline-block;
+    display: contents;
+
 }
 
 .email label {
@@ -182,9 +149,27 @@ h2 span {
     margin-top: -27px;
 }
 
+#sub {
+    width: 100%;
+}
+
 .sel {
-    width: 740px;
+    width: 100%;
     height: 40px;
+
+}
+
+.form1 textarea {
+    width: 100%;
+
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    border: 2px solid #f0f0f0;
 }
 
 .send {
@@ -194,12 +179,11 @@ h2 span {
     background-color: transparent;
     background-image: linear-gradient(90deg, #196730, #439a0d);
     margin-bottom: 40px;
+
 }
 
 .send:hover {
     box-shadow: 0px 0px 5px #439a0d;
-
-    border: none;
 }
 
 .send p {
@@ -211,54 +195,24 @@ h2 span {
     padding-right: 13px;
 }
 
-@media screen and (max-width: 540px) {
-    .form1 {
-        width: 100%;
-    }
-
-    .form1 input {
-        width: 210px;
-        height: 40px;
-
-    }
-
-    .email {
-        margin-left: 25px;
-        margin-bottom: 20px;
-        display: inline-block;
-    }
-
-    .email label {
-        position: absolute;
-        margin-top: -27px;
-    }
-
-    .sel {
-        width: 444px;
-        height: 40px;
-    }
-
-    .form1 textarea {
-        width: 444px;
-        height: 90px;
-    }
-
-}
 
 .box-img {
     margin-top: 7em;
-    width: 400px;
+    width: 100%;
     height: 400px;
 }
 
 .box-lines {
     background-color: #2E2E2E;
     color: #fff;
-    width: 350px;
-    height: 400px;
-    position: absolute;
-    margin-left: 25px;
-    margin-top: -50px;
+    width: 94%;
+    height: 42%;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-top: -30px;
+    padding: 15px;
+
+
 }
 
 .icons {
@@ -279,13 +233,13 @@ h2 span {
 
 li {
     list-style-type: none;
-    margin-bottom: -30px;
+    margin-bottom: 25px;
 }
 
 .list-box {
     text-decoration: none;
     color: #fff;
-    padding: 20px;
+
 }
 
 .list-box:hover {
@@ -298,19 +252,32 @@ li {
     font-size: 20px;
     display: inline-block;
     font-weight: 600;
+    position: absolute;
+    margin-top: 15px;
 }
 
 .list-box p {
     font-size: 20px;
-    margin-left: 100px;
-    margin-top: -20px;
+    margin-left: 80px;
+    margin-top: -30px;
 }
 
+@media screen and (max-width: 576px) {
+
+    .box-lines {
+
+        margin-top: 20px;
+
+
+    }
+
+}
+
+
 .inner-footer {
-    margin-top: 70px;
     background-color: #252220;
     width: 100%;
-    height: 600px;
+    height: 100%;
     text-align: center;
 
 }
@@ -324,12 +291,12 @@ li {
 .img-footer {
     font-weight: 500;
     font-size: 26px;
+    margin-left: -48px;
 }
 
 .logoimg {
     margin-top: -60px;
     margin-bottom: 1rem;
-    margin-left: 5em;
     font-size: 26px;
 }
 
@@ -353,7 +320,7 @@ li {
 #orders:hover {
     box-shadow: 0px 0px 15px #439a0d;
     transition-property: all;
-    
+
 }
 
 #orders p {
@@ -365,9 +332,18 @@ li {
     padding-right: 13px;
 }
 
-.para-line button {
-    border-radius: none;
+.logo-name2 {
+    display: inline;
+    position: absolute;
+    color: #fff;
+    line-height: 25px;
+    margin-top: 55px;
 }
+
+.logo-name2 span {
+    display: block;
+}
+
 
 .icones {
     margin-top: 40px;
@@ -421,17 +397,60 @@ li {
 
 #lines p {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
     color: #666;
+    margin-bottom: 0px;
 }
 
-@media screen and (max-width:540px) {
-    #lines p {
+@media screen and (max-width: 576px) {
+    .nav-item {
+        z-index: 100;
         text-align: center;
     }
 
-    .inner-footer {
-        margin-top: 25em;
-        height: 700px;
+    .navbar {
+        background-color: #252220;
+        z-index: 100;
+
     }
+
+    .navbar-nav {
+        position: relative;
+        left: 0%;
+    }
+
+    .navbar-toggler {
+        display: block;
+        margin-top: -20px;
+        z-index: 100;
+    }
+
+    .inner-headers {
+        width: 100%;
+
+    }
+
+    .act {
+        width: 90%;
+        height: 50px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: transparent;
+        background-image: linear-gradient(90deg, #196730, #439a0d);
+
+
+    }
+
+    .acts:hover {
+        height: 50px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: transparent;
+        background-image: linear-gradient(90deg, #196730, #439a0d);
+
+
+    }
+
+
+
 }

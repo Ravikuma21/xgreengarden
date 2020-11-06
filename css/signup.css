@@ -1,17 +1,16 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 ::selection {
-    background-color: #336733;
+    background-color: green;
     color: #fff;
 }
 
 .inner-headers {
     background-color: #252220;
     width: 100%;
-    height: 7em;
     text-align: center;
 
 }
@@ -19,9 +18,11 @@
 .navbar-brand {
     font-size: 25px;
     font-weight: 600;
-    margin-right: 12em;
+}
 
-
+.navbar-nav {
+    position: relative;
+    left: 15%;
 }
 
 .act {
@@ -29,72 +30,40 @@
     height: 50px;
     border-radius: 10px;
     text-align: center;
-
     background-color: transparent;
     background-image: linear-gradient(90deg, #196730, #439a0d);
 
 }
 
 .acts:hover {
+
     border-radius: 10px;
     text-align: center;
     background-color: transparent;
     background-image: linear-gradient(90deg, #196730, #439a0d);
 
+
 }
-
-
-@media screen and (max-width: 992px) {
-    .nav-item {
-        z-index: 100;
-
-    }
-    .navbar{
-        background-color: #252220;
-        z-index: 100;
-    }
-
-    .navbar-toggler {
-        margin-top: -6em;
-        margin-left: 19em;
-        z-index: 10000;
-    }
-
-    .inner-headers {
-        width: 100%;
-    }
-
-    .act {
-        width: 90%;
-        height: 50px;
-        border-radius: 10px;
-        text-align: center;
-        background-color: transparent;
-        background-image: linear-gradient(90deg, #196730, #439a0d);
-
-    }
-
-    .acts:hover {
+h2 span{
+    color: #439a0d;
     
-        border-radius: 10px;
-        text-align: center;
-        background-color: transparent;
-        background-image: linear-gradient(90deg, #196730, #439a0d);
-
-    }
-
-
 }
-
-span {
-    color: #fff;
-}
-
 
 .logo-img {
-    color: #fff;
     width: 100px;
-    height: 75px;
+    height: 80px;
+}
+
+.logo-name {
+    display: inline;
+    position: absolute;
+    color: #fff;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.logo-name span {
+    display: block;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -105,19 +74,6 @@ span {
     color: #fff;
 }
 
-@media screen and (max-width: 992px) {
-    .navbar-light .navbar-nav .nav-link {
-        color: #fff;
-    }
-
-}
-
-
-.logoline {
-    margin-top: -39px;
-    margin-bottom: 1rem;
-    margin-left: 5em;
-}
 
 .nav-item {
     color: #fff;
@@ -125,12 +81,14 @@ span {
     font-size: 18px;
     font-weight: 400;
 }
+
 .bak-img{
     width: 100%;
     height: 760px;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px
     
 }
 .mywrapper{
@@ -186,11 +144,11 @@ span {
     color: blue;
 }
 
+
 .inner-footer {
-    margin-top: 20px;
     background-color: #252220;
     width: 100%;
-    height: 600px;
+    height: 100%;
     text-align: center;
 
 }
@@ -204,12 +162,12 @@ span {
 .img-footer {
     font-weight: 500;
     font-size: 26px;
+    margin-left: -48px;
 }
 
 .logoimg {
     margin-top: -60px;
     margin-bottom: 1rem;
-    margin-left: 5em;
     font-size: 26px;
 }
 
@@ -245,9 +203,18 @@ span {
     padding-right: 13px;
 }
 
-.para-line button {
-    border-radius: none;
+.logo-name2 {
+    display: inline;
+    position: absolute;
+    color: #fff;
+    line-height: 25px;
+    margin-top: 55px;
 }
+
+.logo-name2 span {
+    display: block;
+}
+
 
 .icones {
     margin-top: 40px;
@@ -301,21 +268,67 @@ span {
 
 #lines p {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
     color: #666;
+    margin-bottom: 0px;
 }
 
-@media screen and (max-width: 992px) {
-    #lines p {
+@media screen and (max-width: 576px) {
+    .nav-item {
+        z-index: 100;
         text-align: center;
     }
 
-    .inner-footer {
-        margin-top: 50px;
-        height: 700px;
+    .navbar {
+        background-color: #252220;
+        z-index: 100;
+
     }
+
+    .navbar-nav {
+        position: relative;
+        left: 0%;
+    }
+
+    .navbar-toggler {
+        display: block;
+        margin-top: -20px;
+        z-index: 100;
+    }
+
+    .inner-headers {
+        width: 100%;
+
+    }
+
+    .act {
+        width: 90%;
+        height: 50px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: transparent;
+        background-image: linear-gradient(90deg, #196730, #439a0d);
+
+
+    }
+
+    .acts:hover {
+        height: 50px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: transparent;
+        background-image: linear-gradient(90deg, #196730, #439a0d);
+
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 992px) {
     .mywrapper{
-        width: 400px;
+        width: 100%;
        
      
     }
