@@ -8,9 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/contact.css" type="text/css">
+    <link rel="stylesheet" href="css/checkout.css" type="text/css">
     <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
-    <script src="js/contact.js"></script>
+  
     <title>Contact - Gardening</title>
     <link rel="icon" type="text/image" href="img/logo-garden.png">
 </head>
@@ -47,7 +47,7 @@
                             <li class="nav-item acts">
                                 <a class="nav-link" href="shop.html">Shop</a>
                             </li>
-                            <li class="nav-item act">
+                            <li class="nav-item acts">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item acts">
@@ -60,88 +60,75 @@
             </nav>
         </div>
     </section>
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    <div class="contact">
-                        <p class="box-line">Get in touch with us</p>
-                        <h2>Contact The <span>Gardening Group</span> </h2>
-                        <span class="linegreen"></span>
-                        <p>Call or submit online form to request an estimate or for general questions about Company Certified Contractors and our services. We look forward to serving you!</p>
+    <section id="contant">
+        <div class="containers">
+        <div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form>
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Billing Address</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="email" name="email" placeholder="john@example.com">
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                      <label for="city"><i class="fa fa-institution"></i> City</label>
+                      <input type="text" id="city" name="city" placeholder="New York">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="NY">
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+                      </div>
                     </div>
-                    <div class="form1">
-                        <form>
-                            <label>Your Name(required)</label><br>
-                            <input type="text" id="fullname">
-                            <div class="email">
-                                <label>Your Email(required)</label>
-                                <input type="email" id="email">
-                            </div>
-                            <label>Subject</label><br>
-                            <input type="text" id="sub"><br><br>
-                            <label>Department</label><br>
-                            <select class="sel">
-                                <option>Business Department</option>
-                                <option>Personal Department</option>
-                                <option>Support Department</option>
-                                <option>Other</option>
-                            </select><br><br>
-                            <label>Your Message</label><br>
-                            <textarea name="message" cols="100" rows="5" id="textmessage"></textarea><br><br>
-                            <a href="#">
-                                <button type="submit" name="send" class="send" onclick="return formvalidation()">
-                                    <p>Send</p>
-                                </button>
-                            </a>
-                        </form>
+          
+                    <div class="col-50">
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fab fa-cc-visa" style="color:navy;"></i>
+                        <i class="fab fa-cc-amex" style="color:blue;"></i>
+                        <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fab fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+          
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
                     </div>
-
-                </div>
-                <div class="col-sm-4">
-                    <div class="box-img" style="background-image: url(img/p8-1.jpg)">
-
-                    </div>
-                    <div class="box-lines">
-                        <ul>
-                            <li>
-                                <a href="#" class="list-box">
-                                    <i class="fas fa-mobile-alt icons"></i>
-                                    <h1>Phone</h1>
-                                    <p>+91-8340469487</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-box">
-                                    <i class="fas fa-location-arrow icons"></i>
-                                    <h1>Support</h1>
-                                    <p>xgreengarden.com</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-box">
-                                    <i class="fas fa-map-marker-alt icons"></i>
-                                    <h1>Address</h1>
-                                    <p>Sasaram City</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="list-box">
-                                    <i class="fab fa-twitter icons"></i>
-                                    <h1>Soical Media</h1>
-                                    <p>@greengarden</p>
-                                </a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
+          
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                  </label>
+                  <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+              </div>
             </div>
-
         </div>
     </section>
+
     <section id="footer">
         <div class="inner-footer">
             <div class="img-footer">

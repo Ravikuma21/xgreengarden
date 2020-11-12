@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
     <link href="css/login.css" rel="stylesheet" type="text/css">
+    <script src="js/login.js"></script>
     <title>Login - Gardening</title>
     <link rel="icon" type="text/image" href="img/logo-garden.png">
 </head>
@@ -67,18 +68,18 @@
                             <div class="box">
                                 <p>Register</p>
                             </div>
-                            <form class="form1">
+                            <form class="form1" action="index.html">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email Address or Phone No.</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email or phone no.">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email or phone no." onkeyup="validationEmail()">
                                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <input type="password" class="form-control" id="pass" placeholder="Password">
                                 </div>
                                 <a href="#">
-                                <button type="submit" class="btn">Log In</button>
+                                <button type="submit" class="btn" onclick="return formvalidation()">Log In</button>
                                 </a>
                                 <p class="para">Create A New Account</p>
                                 <div class="paralink">
